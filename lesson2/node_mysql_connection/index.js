@@ -13,8 +13,8 @@ var connection = mysql.createConnection({
 
 connection.connect();
 
-connection.query('SELECT * FROM user', function(error, results, fields) {
-    console.log(results);
+connection.query('SELECT * FROM student', function(error, results, fields) {
+    console.log(results, error);
 });
 
 connection.end();
